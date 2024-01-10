@@ -1,382 +1,1273 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">John Doe</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">John Doe</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">John Doe</h1>
-        <p class="section__text__p2">Frontend Developer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://linkedin.com/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/'"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/about-pic.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>2+ years <br />Frontend Development</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-              reprehenderit et laborum, rem, dolore eum quod voluptate
-              exercitationem nobis, nihil esse debitis maxime facere minus sint
-              delectus velit in eos quo officiis explicabo deleniti dignissimos.
-              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
-              reiciendis ea magnam? Nulla, impedit fuga!
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SASS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>TypeScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Material UI</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>PostgreSQL</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Node JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Express JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>My Portfolio</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="mediaqueries.css" />
+	</head>
+	<body>
+		<nav id="desktop-nav">
+			<div
+				class="logo"
+				onclick="location.href='#profile'"
+				style="cursor: pointer;"
+			>
+				Asif Alam
+			</div>
+			<div>
+				<ul class="nav-links">
+					<li><a href="#about">About</a></li>
+					<li><a href="#experience">Experience</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+		<nav id="hamburger-nav">
+			<div class="logo">Asif Alam</div>
+			<div class="hamburger-menu">
+				<div class="hamburger-icon" onclick="toggleMenu()">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<div class="menu-links">
+					<li><a href="#about" onclick="toggleMenu()">About</a></li>
+					<li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+					<li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+					<li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+				</div>
+			</div>
+		</nav>
+		<section id="profile">
+			<div class="section__pic-container">
+				<img src="./assets/profile-pic.png" alt="Asif Alam profile picture" />
+			</div>
+			<div class="section__text">
+				<p class="section__text__p1">Hello, I'm</p>
+				<h1 class="title">Asif Alam</h1>
+				<p class="section__text__p2">Frontend Developer</p>
+				<div class="btn-container">
+					<button
+						class="download-button"
+						onclick="window.open('./assets/resume-example.pdf')"
+						style="cursor: pointer;"
+					>
+						<div class="docs">
+							<svg
+								class="css-i6dzq1"
+								stroke-linejoin="round"
+								stroke-linecap="round"
+								fill="none"
+								stroke-width="2"
+								stroke="currentColor"
+								height="20"
+								width="20"
+								viewBox="0 0 24 24"
+							>
+								<path
+									d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+								></path>
+								<polyline points="14 2 14 8 20 8"></polyline>
+								<line y2="13" x2="8" y1="13" x1="16"></line>
+								<line y2="17" x2="8" y1="17" x1="16"></line>
+								<polyline points="10 9 9 9 8 9"></polyline>
+							</svg>
+							CV
+						</div>
+						<div class="download">
+							<svg
+								class="css-i6dzq1"
+								stroke-linejoin="round"
+								stroke-linecap="round"
+								fill="none"
+								stroke-width="2"
+								stroke="currentColor"
+								height="24"
+								width="24"
+								viewBox="0 0 24 24"
+							>
+								<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+								<polyline points="7 10 12 15 17 10"></polyline>
+								<line y2="3" x2="12" y1="15" x1="12"></line>
+							</svg>
+						</div>
+					</button>
+
+					<button onclick="location.href='./#contact'" class="contact-btn">
+						<div class="svg-wrapper-1">
+							<div class="svg-wrapper">
+								<svg
+									class="button-svg"
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 24 24"
+									width="24"
+									height="24"
+								>
+									<path fill="none" d="M0 0h24v24H0z"></path>
+									<path
+										fill="currentColor"
+										d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
+									></path>
+								</svg>
+							</div>
+						</div>
+						<span class="button-span">Contact</span>
+					</button>
+				</div>
+				<div id="socials-container">
+					<button
+						class="Btn"
+						onclick="window.open('https://www.linkedin.com/in/asif-alam-talukder', '_blank')"
+					>
+						<span
+							class="svgContainer"
+							onclick="window.open('https://www.linkedin.com/in/asif-alam-talukder', '_blank')"
+						>
+							<svg
+								viewBox="0 0 448 512"
+								height="1.6em"
+								xmlns="http://www.w3.org/2000/svg"
+								class="svgIcon"
+								fill="white"
+							>
+								<path
+									d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"
+								></path>
+							</svg>
+						</span>
+						<span
+							class="BG"
+							onclick="window.open('https://www.linkedin.com/in/asif-alam-talukder', '_blank')"
+						></span>
+					</button>
+
+					<button
+						class="Btn"
+						onclick="window.open('https://github.com/Asif-Alam1', '_blank')"
+					>
+						<span
+							class="svgContainer"
+							onclick="window.open('https://github.com/Asif-Alam1', '_blank')"
+						>
+							<svg
+								fill="white"
+								viewBox="0 0 496 512"
+								height="1.6em"
+								onclick="window.open('https://www.linkedin.com/in/asif-alam-talukder', '_blank')"
+							>
+								<path
+									d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+								></path>
+							</svg>
+						</span>
+						<span
+							class="BG"
+							onclick="window.open('https://github.com/Asif-Alam1', '_blank')"
+						></span>
+					</button>
+				</div>
+			</div>
+		</section>
+		<section id="about">
+			<p class="section__text__p1">Get To Know More</p>
+			<h1 class="title">About Me</h1>
+			<div class="section-container">
+				<div class="section__pic-container">
+					<img
+						src="./assets/about-pic.jpg"
+						alt="Profile picture"
+						class="about-pic"
+					/>
+				</div>
+				<div class="about-details-container">
+					<div class="about-containers">
+						<div class="CARD">
+							<p class="heading" style="font-size:xx-large;">✅</p>
+							<p>Experience</p>
+							<p>1 year in Frontend Development</p>
+						</div>
+						<div class="CARD">
+							<p class="heading" style="font-size: xx-large;">🎓</p>
+							<p>Education</p>
+							<p>B.Sc. in Computer Engineering GPA:90.07</p>
+						</div>
+					</div>
+					<div class="text-container">
+						<p>
+							A top computer engineering student with remarkably high grades and
+							various work experience in various sectors. Possess excellent
+							critical thinking and problem-solving skills alongside
+							multilingual capabilities. Keen to pursue a career in the
+							technology sector and most preferably in the Software Development
+							and engineering world.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<button
+				class="down-btn"
+				style="transform: rotate(180deg);"
+				onclick="location.href='./#projects'"
+			>
+				<svg height="1.2em" class="btn-arrow" viewBox="0 0 512 512">
+					<path
+						d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"
+					></path>
+				</svg>
+				<p class="down-text" style="transform: rotate(180deg);">
+					Go to Projects
+				</p>
+			</button>
+		</section>
+		<section id="experience">
+			<p class="section__text__p1">Explore My</p>
+			<h1 class="title">Experience</h1>
+			<div class="experience-details-container">
+				<div class="about-containers card">
+					<div class="details-container card2">
+						<h2 class="experience-sub-title">Frontend Development</h2>
+						<div class="article-container">
+							<article>
+								<img
+									src="./assets/checkmark.png"
+									alt="Experience icon"
+									class="icon"
+								/>
+								<div>
+									<h3>Next.js</h3>
+									<p>Intermediate</p>
+								</div>
+							</article>
+							<article>
+								<img
+									src="./assets/checkmark.png"
+									alt="Experience icon"
+									class="icon"
+								/>
+								<div>
+									<h3>React.js</h3>
+									<p>Experienced</p>
+								</div>
+							</article>
+							<article>
+								<img
+									src="./assets/checkmark.png"
+									alt="Experience icon"
+									class="icon"
+								/>
+								<div>
+									<h3>Wordpress</h3>
+									<p>Basic</p>
+								</div>
+							</article>
+							<article>
+								<img
+									src="./assets/checkmark.png"
+									alt="Experience icon"
+									class="icon"
+								/>
+								<div>
+									<h3>No-code Development</h3>
+									<p>Intermediate</p>
+								</div>
+							</article>
+
+							<article>
+								<img
+									src="./assets/checkmark.png"
+									alt="Experience icon"
+									class="icon"
+								/>
+								<div>
+									<h3>Database Management</h3>
+									<p>Intermediate</p>
+								</div>
+							</article>
+
+							<article>
+								<img
+									src="./assets/checkmark.png"
+									alt="Experience icon"
+									class="icon"
+								/>
+								<div>
+									<h3>Java</h3>
+									<p>Intermediate</p>
+								</div>
+							</article>
+							<article>
+								<img
+									src="./assets/checkmark.png"
+									alt="Experience icon"
+									class="icon"
+								/>
+								<div>
+									<h3>C++</h3>
+									<p>Intermediate</p>
+								</div>
+							</article>
+
+							<article>
+								<img
+									src="./assets/checkmark.png"
+									alt="Experience icon"
+									class="icon"
+								/>
+								<div>
+									<h3>SASS</h3>
+									<p>Intermediate</p>
+								</div>
+							</article>
+							<article>
+								<img
+									src="./assets/checkmark.png"
+									alt="Experience icon"
+									class="icon"
+								/>
+								<div>
+									<h3>JavaScript</h3>
+									<p>Experienced</p>
+								</div>
+							</article>
+							<article>
+								<img
+									src="./assets/checkmark.png"
+									alt="Experience icon"
+									class="icon"
+								/>
+								<div>
+									<h3>TypeScript</h3>
+									<p>Experienced</p>
+								</div>
+							</article>
+							<article>
+								<img
+									src="./assets/checkmark.png"
+									alt="Experience icon"
+									class="icon"
+								/>
+								<div>
+									<h3>React Native</h3>
+									<p>Basic</p>
+								</div>
+							</article>
+							<article>
+								<img
+									src="./assets/checkmark.png"
+									alt="Experience icon"
+									class="icon"
+								/>
+								<div>
+									<h3>Material UI</h3>
+									<p>Intermediate</p>
+								</div>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+			<button
+				class="down-btn"
+				style="transform: rotate(180deg);"
+				onclick="location.href='./#contact'"
+			>
+				<svg height="1.2em" class="btn-arrow" viewBox="0 0 512 512">
+					<path
+						d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"
+					></path>
+				</svg>
+				<p class="down-text" style="transform: rotate(180deg);">
+					Go to Contact info
+				</p>
+			</button>
+		</section>
+		<section id="projects">
+			<p class="section__text__p1">Browse My Recent</p>
+			<h1 class="title">Projects</h1>
+			<div class="experience-details-container">
+				<div class="about-containers">
+					<div class="details-container color-container" id="project-1">
+						<div class="article-container">
+							<img
+								src="./assets/Prompt.png"
+								alt="Promptopia"
+								class="project-img"
+								onclick="window.open('./assets/Prompt.png', '_blank')"
+							/>
+						</div>
+						<h2 class="experience-sub-title project-title">Promptopia</h2>
+						<p class="project-description">
+							an AI prompt sharing app made with Next.js
+						</p>
+
+						<div class="btn-container">
+							<button
+								class="button"
+								data-text="Awesome"
+								onclick="window.open('https://github.com/Asif-Alam1/Promptopia', '_blank')"
+							>
+								<span class="actual-text" style="color:gray;"
+									>&nbsp;Github&nbsp;</span
+								>
+								<span aria-hidden="true" class="hover-text"
+									>&nbsp;Github&nbsp;</span
+								>
+							</button>
+
+							<button
+								class="button2"
+								data-text="Awesome"
+								onclick="window.open('https://promptopia-phi-sable.vercel.app/', '_blank')"
+							>
+								<span class="actual-text" style="color:gray;"
+									>&nbsp;Demo&nbsp;</span
+								>
+								<span aria-hidden="true" class="hover-text"
+									>&nbsp;Demo&nbsp;</span
+								>
+							</button>
+						</div>
+					</div>
+					<div class="details-container color-container" id="project-2">
+						<div class="article-container">
+							<img
+								src="./assets/Ninja.png"
+								alt="Ninja Helper"
+								class="project-img"
+								onclick="window.open('./assets/Ninja.png', '_blank')"
+							/>
+						</div>
+						<h2 class="experience-sub-title project-title">Ninja Help</h2>
+						<p class="project-description">
+							a Ticketing and Helpdesk app made with Next.js
+						</p>
+
+						<div class="btn-container">
+							<button
+								class="button"
+								data-text="Awesome"
+								onclick="window.open('https://github.com/Asif-Alam1/Ninja-Helper', '_blank')"
+							>
+								<span class="actual-text" style="color:gray;"
+									>&nbsp;Github&nbsp;</span
+								>
+								<span aria-hidden="true" class="hover-text"
+									>&nbsp;Github&nbsp;</span
+								>
+							</button>
+						</div>
+					</div>
+					<div class="details-container color-container" id="project-3">
+						<div class="article-container">
+							<img
+								src="./assets/Auth.png"
+								alt="Auth Toolkit"
+								class="project-img"
+								onclick="window.open('./assets/Auth.png', '_blank')"
+							/>
+						</div>
+						<h2 class="experience-sub-title project-title">Auth Toolkit</h2>
+						<p class="project-description">
+							an authenticaticaion toolkit made with next.js and auth v5
+						</p>
+
+						<div class="btn-container">
+							<button
+								class="button"
+								data-text="Awesome"
+								onclick="window.open('https://github.com/Asif-Alam1/next-auth-v5', '_blank')"
+							>
+								<span class="actual-text" style="color:gray;"
+									>&nbsp;Github&nbsp;</span
+								>
+								<span aria-hidden="true" class="hover-text"
+									>&nbsp;Github&nbsp;</span
+								>
+							</button>
+
+							<button
+								class="button2"
+								data-text="Awesome"
+								onclick="window.open('https://next-auth-v5-theta.vercel.app/', '_blank')"
+							>
+								<span class="actual-text" style="color:gray;"
+									>&nbsp;Demo&nbsp;</span
+								>
+								<span aria-hidden="true" class="hover-text"
+									>&nbsp;Demo&nbsp;</span
+								>
+							</button>
+						</div>
+					</div>
+
+					<div class="details-container color-container" id="project-4">
+						<div class="article-container">
+							<img
+								src="./assets/News.png"
+								alt="Newsletter"
+								class="project-img"
+								onclick="window.open('./assets/News.png', '_blank')"
+							/>
+						</div>
+						<h2 class="experience-sub-title project-title">Newsletter</h2>
+						<p class="project-description">
+							a newsletter and blog website made with next.js
+						</p>
+
+						<div class="btn-container">
+							<button
+								class="button"
+								data-text="Awesome"
+								onclick="window.open('https://github.com/Asif-Alam1/Newsletter', '_blank')"
+							>
+								<span class="actual-text" style="color:gray;"
+									>&nbsp;Github&nbsp;</span
+								>
+								<span aria-hidden="true" class="hover-text"
+									>&nbsp;Github&nbsp;</span
+								>
+							</button>
+
+							<button
+								class="button2"
+								data-text="Awesome"
+								onclick="window.open('https://newsletter-chi-five.vercel.app/', '_blank')"
+							>
+								<span class="actual-text" style="color:gray;"
+									>&nbsp;Demo&nbsp;</span
+								>
+								<span aria-hidden="true" class="hover-text"
+									>&nbsp;Demo&nbsp;</span
+								>
+							</button>
+						</div>
+					</div>
+					<div class="details-container color-container" id="project-5">
+						<div class="article-container">
+							<img
+								src="./assets/BetterMe.png"
+								alt="BetterMe"
+								class="project-img"
+								onclick="window.open('./assets/BetterMe.png', '_blank')"
+							/>
+						</div>
+						<h2 class="experience-sub-title project-title">BetterMe</h2>
+						<p class="project-description">
+							a calorie tracking and fitness app made with React.js
+						</p>
+
+						<div class="btn-container">
+							<button
+								class="button"
+								data-text="Awesome"
+								onclick="window.open('https://github.com/Asif-Alam1/BetterMe', '_blank')"
+							>
+								<span class="actual-text" style="color:gray;"
+									>&nbsp;Github&nbsp;</span
+								>
+								<span aria-hidden="true" class="hover-text"
+									>&nbsp;Github&nbsp;</span
+								>
+							</button>
+
+							<button
+								class="button2"
+								data-text="Awesome"
+								onclick="window.open('https://betterme.rf.gd/', '_blank')"
+							>
+								<span class="actual-text" style="color:gray;"
+									>&nbsp;Demo&nbsp;</span
+								>
+								<span aria-hidden="true" class="hover-text"
+									>&nbsp;Demo&nbsp;</span
+								>
+							</button>
+						</div>
+					</div>
+					<div class="details-container color-container" id="project-6">
+						<div class="article-container">
+							<img
+								src="./assets/ACME.webp"
+								alt="ACME"
+								class="project-img"
+								onclick="window.open('./assets/ACME.webp', '_blank')"
+							/>
+						</div>
+						<h2 class="experience-sub-title project-title">ACME</h2>
+						<p class="project-description">
+							an Online Dashboard made with Next.js
+						</p>
+
+						<div class="btn-container">
+							<button
+								class="button"
+								data-text="Awesome"
+								onclick="window.open('https://github.com/Asif-Alam1/ACME', '_blank')"
+							>
+								<span class="actual-text" style="color:gray;"
+									>&nbsp;Github&nbsp;</span
+								>
+								<span aria-hidden="true" class="hover-text"
+									>&nbsp;Github&nbsp;</span
+								>
+							</button>
+
+							<button
+								class="button2"
+								data-text="Awesome"
+								onclick="window.open('https://acme-beta-six.vercel.app/', '_blank')"
+							>
+								<span class="actual-text" style="color:gray;"
+									>&nbsp;Demo&nbsp;</span
+								>
+								<span aria-hidden="true" class="hover-text"
+									>&nbsp;Demo&nbsp;</span
+								>
+							</button>
+						</div>
+					</div>
+
+					<div class="details-container color-container hidden" id="project-7">
+						<div class="article-container">
+							<img
+								src="./assets/wordle.png"
+								alt="Wordle Clone"
+								class="project-img"
+								onclick="window.open('./assets/wordle.png', '_blank')"
+							/>
+						</div>
+						<h2 class="experience-sub-title project-title">Wordle Clone</h2>
+						<p class="project-description">a worlde clone made with React.js</p>
+
+						<div class="btn-container">
+							<button
+								class="button"
+								data-text="Awesome"
+								onclick="window.open('https://github.com/Asif-Alam1/Wordle-Clone', '_blank')"
+							>
+								<span class="actual-text" style="color:gray;"
+									>&nbsp;Github&nbsp;</span
+								>
+								<span aria-hidden="true" class="hover-text"
+									>&nbsp;Github&nbsp;</span
+								>
+							</button>
+
+							<button
+								class="button2"
+								data-text="Awesome"
+								onclick="window.open('https://tiabirthday.netlify.app/', '_blank')"
+							>
+								<span class="actual-text" style="color:gray;"
+									>&nbsp;Demo&nbsp;</span
+								>
+								<span aria-hidden="true" class="hover-text"
+									>&nbsp;Demo&nbsp;</span
+								>
+							</button>
+						</div>
+					</div>
+					<div class="details-container hidden color-container" id="project-8">
+						<div class="article-container">
+							<img
+								src="./assets/Blog.png"
+								alt="Blog Site"
+								class="project-img"
+								onclick="window.open('./assets/Blog.png', '_blank')"
+							/>
+						</div>
+						<h2 class="experience-sub-title project-title">Blog Site</h2>
+						<p class="project-description">
+							this is a simple Blog Site app made with React.js
+						</p>
+
+						<div class="btn-container">
+							<button
+								class="button"
+								data-text="Awesome"
+								onclick="window.open('https://github.com/Asif-Alam1/Blog-Site','_blank')"
+							>
+								<span class="actual-text" style="color:gray;"
+									>&nbsp;Github&nbsp;</span
+								>
+								<span aria-hidden="true" class="hover-text"
+									>&nbsp;Github&nbsp;</span
+								>
+							</button>
+						</div>
+					</div>
+					<div class="details-container color-container hidden" id="project-9">
+						<div class="article-container">
+							<img
+								src="./assets/crypto.png"
+								alt="Crypto App"
+								class="project-img"
+							/>
+						</div>
+						<h2 class="experience-sub-title project-title">Crypto App</h2>
+						<p class="project-description">
+							an app to track crypto prices made with React.js
+						</p>
+
+						<div class="btn-container">
+							<button
+								class="button"
+								data-text="Awesome"
+								onclick="window.open('https://github.com/Asif-Alam1/Crypto-App','_blank')"
+							>
+								<span class="actual-text" style="color:gray;"
+									>&nbsp;Github&nbsp;</span
+								>
+								<span aria-hidden="true" class="hover-text"
+									>&nbsp;Github&nbsp;</span
+								>
+							</button>
+
+							<button
+								class="button2"
+								data-text="Awesome"
+								onclick="window.open('https://shiny-swan-c046ef.netlify.app/', '_blank')"
+							>
+								<span class="actual-text" style="color:gray;"
+									>&nbsp;Demo&nbsp;</span
+								>
+								<span aria-hidden="true" class="hover-text"
+									>&nbsp;Demo&nbsp;</span
+								>
+							</button>
+						</div>
+					</div>
+					<div
+						class="details-container color-container hidden"
+						id="project-10 "
+					>
+						<div class="article-container">
+							<img
+								src="./assets/Adopt.png"
+								alt="Animal Adopt"
+								class="project-img"
+								onclick="window.open('./assets/Adopt.png', '_blank')"
+							/>
+						</div>
+						<h2 class="experience-sub-title project-title">Animal Adopt</h2>
+						<p class="project-description">
+							a simple animal adoption website made with React.js
+						</p>
+
+						<div class="btn-container">
+							<button
+								class="button"
+								data-text="Awesome"
+								onclick="window.open('https://github.com/Asif-Alam1/Animal-adoption','_blank')"
+							>
+								<span class="actual-text" style="color:gray;"
+									>&nbsp;Github&nbsp;</span
+								>
+								<span aria-hidden="true" class="hover-text"
+									>&nbsp;Github&nbsp;</span
+								>
+							</button>
+
+							<button
+								class="button2"
+								data-text="Awesome"
+								onclick="window.open('https://main--glittering-sable-af77b0.netlify.app/', '_blank')"
+							>
+								<span class="actual-text" style="color:gray;"
+									>&nbsp;Demo&nbsp;</span
+								>
+								<span aria-hidden="true" class="hover-text"
+									>&nbsp;Demo&nbsp;</span
+								>
+							</button>
+						</div>
+					</div>
+					<div class="details-container color-container hidden" id="project-11">
+						<div class="article-container">
+							<img
+								src="./assets/weather.png"
+								alt="weather app"
+								class="project-img"
+								onclick="window.open('./assets/weather.png', '_blank');"
+							/>
+						</div>
+						<h2 class="experience-sub-title project-title">Weather App</h2>
+						<p class="project-description">a weather app made with React.js</p>
+
+						<div class="btn-container">
+							<button
+								class="button"
+								data-text="Awesome"
+								onclick="window.open('https://github.com/Asif-Alam1/Weather-App','_blank')"
+							>
+								<span class="actual-text" style="color:gray;"
+									>&nbsp;Github&nbsp;</span
+								>
+								<span aria-hidden="true" class="hover-text"
+									>&nbsp;Github&nbsp;</span
+								>
+							</button>
+
+							<button
+								class="button2"
+								data-text="Awesome"
+								onclick="window.open('https://taupe-dango-ceb2d5.netlify.app/', '_blank')"
+							>
+								<span class="actual-text" style="color:gray;"
+									>&nbsp;Demo&nbsp;</span
+								>
+								<span aria-hidden="true" class="hover-text"
+									>&nbsp;Demo&nbsp;</span
+								>
+							</button>
+						</div>
+					</div>
+					<div class="details-container color-container hidden" id="project-12">
+						<div class="article-container">
+							<img
+								src="./assets/Screenshot 2024-01-10 124054.png"
+								alt="Expense Tracker"
+								class="project-img"
+								onclick="window.open('./assets/Screenshot 2024-01-10 124054.png','_blank')"
+							/>
+						</div>
+						<h2 class="experience-sub-title project-title">Expense Tracker</h2>
+						<p class="project-description">
+							Expense Tracker made with React.js
+						</p>
+
+						<div class="btn-container">
+							<button
+								class="button"
+								data-text="Awesome"
+								onclick="window.open('https://github.com/Asif-Alam1/Expense-Tracker','_blank')"
+							>
+								<span class="actual-text" style="color:gray;"
+									>&nbsp;Github&nbsp;</span
+								>
+								<span aria-hidden="true" class="hover-text"
+									>&nbsp;Github&nbsp;</span
+								>
+							</button>
+							<button
+								class="button2"
+								data-text="Awesome"
+								onclick="window.open('https://gregarious-chebakia-8eebe2.netlify.app/', '_blank')"
+							>
+								<span class="actual-text" style="color:gray;"
+									>&nbsp;Demo&nbsp;</span
+								>
+								<span aria-hidden="true" class="hover-text"
+									>&nbsp;Demo&nbsp;</span
+								>
+							</button>
+						</div>
+					</div>
+					<div class="details-container color-container hidden" id="project-15">
+						<div class="article-container">
+							<img src="./assets/fox.png" alt="Fox Game" class="project-img" />
+						</div>
+						<h2 class="experience-sub-title project-title">Pet Game</h2>
+						<p class="project-description">
+							a virtual pet game written in React
+						</p>
+
+						<div class="btn-container">
+							<button
+								class="button"
+								data-text="Awesome"
+								onclick="window.open('https://github.com/Asif-Alam1/pet-game','_blank')"
+							>
+								<span class="actual-text" style="color:gray;"
+									>&nbsp;Github&nbsp;</span
+								>
+								<span aria-hidden="true" class="hover-text"
+									>&nbsp;Github&nbsp;</span
+								>
+							</button>
+
+							<button
+								class="button2"
+								data-text="Awesome"
+								onclick="window.open('https://btholt.github.io/project-files-for-fox-game/', '_blank')"
+							>
+								<span class="actual-text" style="color:gray;"
+									>&nbsp;Demo&nbsp;</span
+								>
+								<span aria-hidden="true" class="hover-text"
+									>&nbsp;Demo&nbsp;</span
+								>
+							</button>
+						</div>
+					</div>
+					<div class="details-container color-container hidden" id="project-14">
+						<div class="article-container">
+							<img
+								src="./assets/Tic.png"
+								alt="Tic Tac Toe"
+								class="project-img"
+								onclick="window.open('./assets/Tic.png','_blank')"
+							/>
+						</div>
+						<h2 class="experience-sub-title project-title">Tic-Tac-Toe</h2>
+						<p class="project-description">
+							a Tic Tac Toe game written in React
+						</p>
+
+						<div class="btn-container">
+							<button
+								class="button"
+								data-text="Awesome"
+								onclick="window.open('https://github.com/Asif-Alam1/Tic-Tac-Toe','_blank')"
+							>
+								<span class="actual-text" style="color:gray;"
+									>&nbsp;Github&nbsp;</span
+								>
+								<span aria-hidden="true" class="hover-text"
+									>&nbsp;Github&nbsp;</span
+								>
+							</button>
+							<button
+								class="button2"
+								data-text="Awesome"
+								onclick="window.open('https://venerable-kelpie-be97e2.netlify.app/', '_blank')"
+							>
+								<span class="actual-text" style="color:gray;"
+									>&nbsp;Demo&nbsp;</span
+								>
+								<span aria-hidden="true" class="hover-text"
+									>&nbsp;Demo&nbsp;</span
+								>
+							</button>
+						</div>
+					</div>
+					<div class="details-container color-container hidden" id="project-13">
+						<div class="article-container">
+							<img
+								src="./assets/Battle.png"
+								alt="BattleShip"
+								class="project-img"
+								onclick="window.open('./assets/Battle.png', '_blank');"
+							/>
+						</div>
+						<h2 class="experience-sub-title project-title">BattleShip</h2>
+						<p class="project-description">a text based game written in Java</p>
+
+						<div class="btn-container">
+							<button
+								class="button"
+								data-text="Awesome"
+								onclick="window.open('https://github.com/Asif-Alam1/BattleShip','_blank')"
+							>
+								<span class="actual-text" style="color:gray;"
+									>&nbsp;Github&nbsp;</span
+								>
+								<span aria-hidden="true" class="hover-text"
+									>&nbsp;Github&nbsp;</span
+								>
+							</button>
+						</div>
+					</div>
+
+					<div class="details-container color-container hidden" id="project-16">
+						<div class="article-container">
+							<img
+								src="./assets/Password.png"
+								alt="Project 2"
+								class="project-img"
+								onclick="window.open('./assets/Password.png', '_blank');"
+							/>
+						</div>
+						<h2 class="experience-sub-title project-title">
+							Password Generator
+						</h2>
+						<p class="project-description">
+							a password generator written in Plain Javascript
+						</p>
+
+						<div class="btn-container">
+							<button
+								class="button"
+								data-text="Awesome"
+								onclick="window.open('https://github.com/Asif-Alam1/Password-Generator','_blank')"
+							>
+								<span class="actual-text" style="color:gray;"
+									>&nbsp;Github&nbsp;</span
+								>
+								<span aria-hidden="true" class="hover-text"
+									>&nbsp;Github&nbsp;</span
+								>
+							</button>
+						</div>
+					</div>
+
+					<div class="details-container color-container hidden" id="project-17">
+						<div class="article-container">
+							<img
+								src="./assets/syllabus.png"
+								alt="Syllabus App"
+								class="project-img"
+								onclick="window.open('./assets/syllabus.png', '_blank');"
+							/>
+						</div>
+						<h2 class="experience-sub-title project-title">Syllabus App</h2>
+						<p class="project-description">
+							an app to create,edit and download course syllabus in a consistent
+							way for professors and universities
+						</p>
+
+						<div class="btn-container">
+							<button
+								class="button"
+								data-text="Awesome"
+								onclick="window.open('https://github.com/Asif-Alam1/syllabus')"
+							>
+								<span class="actual-text" style="color:gray;"
+									>&nbsp;Github&nbsp;</span
+								>
+								<span aria-hidden="true" class="hover-text"
+									>&nbsp;Github&nbsp;</span
+								>
+							</button>
+
+							<button
+								class="button2"
+								data-text="Awesome"
+								onclick="window.open('http://inputsyllabus.rf.gd/', '_blank')"
+							>
+								<span class="actual-text" style="color:gray;"
+									>&nbsp;Demo&nbsp;</span
+								>
+								<span aria-hidden="true" class="hover-text"
+									>&nbsp;Demo&nbsp;</span
+								>
+							</button>
+						</div>
+					</div>
+					<div class="details-container color-container hidden" id="project-18">
+						<div class="article-container">
+							<img
+								src="./assets/lead.png"
+								alt="lead tracker"
+								class="project-img"
+								onclick="window.open('./assets/lead.png', '_blank');"
+							/>
+						</div>
+						<h2 class="experience-sub-title project-title">Lead Tracker</h2>
+						<p class="project-description">
+							a chrome extension to save and track leads using Javascript and
+							the local storage
+						</p>
+
+						<div class="btn-container">
+							<button
+								class="button"
+								data-text="Awesome"
+								onclick="window.open('https://github.com/Asif-Alam1/Lead-Tracker','_blank')"
+							>
+								<span class="actual-text" style="color:gray;"
+									>&nbsp;Github&nbsp;</span
+								>
+								<span aria-hidden="true" class="hover-text"
+									>&nbsp;Github&nbsp;</span
+								>
+							</button>
+						</div>
+					</div>
+					<div class="details-container color-container hidden" id="project-21">
+						<div class="article-container">
+							<img
+								src="./assets/Dog.png"
+								alt="Expense Tracker"
+								class="project-img"
+								onclick="window.open('./assets/Dog.png','_blank')"
+							/>
+						</div>
+						<h2 class="experience-sub-title project-title">Dog Quiz</h2>
+						<p class="project-description">
+							Quiz App Made with plain HTML CSS and JS
+						</p>
+
+						<div class="btn-container">
+							<button
+								class="button"
+								data-text="Awesome"
+								onclick="window.open('https://github.com/Asif-Alam1/Guess-The-Dog','_blank')"
+							>
+								<span class="actual-text" style="color:gray;"
+									>&nbsp;Github&nbsp;</span
+								>
+								<span aria-hidden="true" class="hover-text"
+									>&nbsp;Github&nbsp;</span
+								>
+							</button>
+						</div>
+					</div>
+					<div class="details-container color-container hidden" id="project-20">
+						<div class="article-container">
+							<img
+								src="./assets/Calculator.png"
+								alt="Expense Tracker"
+								class="project-img"
+								onclick="window.open('./assets/Calculator.png','_blank')"
+							/>
+						</div>
+						<h2 class="experience-sub-title project-title">Calculator</h2>
+						<p class="project-description">
+							A simple Calculator made with React.js
+						</p>
+
+						<div class="btn-container">
+							<button
+								class="button"
+								data-text="Awesome"
+								onclick="window.open('https://github.com/Asif-Alam1/Calculator','_blank')"
+							>
+								<span class="actual-text" style="color:gray;"
+									>&nbsp;Github&nbsp;</span
+								>
+								<span aria-hidden="true" class="hover-text"
+									>&nbsp;Github&nbsp;</span
+								>
+							</button>
+							<button
+								class="button2"
+								data-text="Awesome"
+								onclick="window.open('https://stellular-pudding-dffeff.netlify.app/', '_blank')"
+							>
+								<span class="actual-text" style="color:gray;"
+									>&nbsp;Demo&nbsp;</span
+								>
+								<span aria-hidden="true" class="hover-text"
+									>&nbsp;Demo&nbsp;</span
+								>
+							</button>
+						</div>
+					</div>
+					<div class="details-container color-container hidden" id="project-19">
+						<div class="article-container">
+							<img
+								src="./assets/Screenshot 2024-01-10 124054.png"
+								alt="Expense Tracker"
+								class="project-img"
+								onclick="window.open('./assets/Screenshot 2024-01-10 124054.png','_blank')"
+							/>
+						</div>
+						<h2 class="experience-sub-title project-title">Unit Converter</h2>
+						<p class="project-description">Unit Converter made with React.js</p>
+
+						<div class="btn-container">
+							<button
+								class="button"
+								data-text="Awesome"
+								onclick="window.open('https://github.com/Asif-Alam1/Unit-Converter','_blank')"
+							>
+								<span class="actual-text" style="color:gray;"
+									>&nbsp;Github&nbsp;</span
+								>
+								<span aria-hidden="true" class="hover-text"
+									>&nbsp;Github&nbsp;</span
+								>
+							</button>
+						</div>
+					</div>
+				</div>
+				<button class="button-see learn-more" id="show-more-btn">
+					<span class="circle" aria-hidden="true">
+						<span class="icon arrow"></span>
+					</span>
+					<span class="button-text">See more</span>
+				</button>
+			</div>
+
+			<button
+				class="up-btn"
+				lass="icon arrow"
+				onclick="location.href='./#contact'"
+				id="up-button"
+			>
+				<svg class="up-svg" viewBox="0 0 384 512">
+					<path
+						d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
+					></path>
+				</svg>
+			</button>
+		</section>
+		<section id="contact">
+			<p class="section__text__p1">Get in Touch</p>
+			<h1 class="title">Contact Me</h1>
+			<div class="contact-info-upper-container">
+				<div class="contact-info-container">
+					<img
+						src="./assets/email.png"
+						alt="Email icon"
+						class="icon contact-icon email-icon"
+						onclick="window.open('mailto:asif.k.alam@net.usek.edu.lb', '_blank')"
+					/>
+					<p>
+						<a href="mailto:asif.k.alam@net.usek.edu.lb" target="_blank"
+							>asif.k.alam@net.usek.edu.lb</a
+						>
+					</p>
+				</div>
+				<div class="contact-info-container">
+					<button
+						class="wp-btn"
+						onclick="window.open('https://wa.me/81972024', '_blank')"
+					>
+						<p class="wp-p">Phone</p>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="16"
+							height="16"
+							fill="currentColor"
+							class="bi bi-whatsapp wp-svg"
+							viewBox="0 0 16 16"
+						>
+							<path
+								d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"
+							></path>
+						</svg>
+					</button>
+					<button
+						onclick="window.open('https://www.linkedin.com/in/asif-alam-talukder', '_blank')"
+						class="linkedin-btn"
+					>
+						<p class="linkedin-p">Connect</p>
+						<svg
+							viewBox="0 0 16 16"
+							class="bi bi-whatsapp linkedin-svg"
+							fill="currentColor"
+							height="16"
+							width="16"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+							></path>
+						</svg>
+					</button>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<nav>
+				<div class="nav-links-container">
+					<ul class="nav-links">
+						<li><a href="#about">About</a></li>
+						<li><a href="#experience">Experience</a></li>
+						<li><a href="#projects">Projects</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
+			</nav>
+			<p>Copyright &#169; 2024 Asif Alam. All Rights Reserved.</p>
+		</footer>
+		<script src="script.js"></script>
+	</body>
 </html>
