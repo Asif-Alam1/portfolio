@@ -1,7 +1,4 @@
 @media screen and (max-width: 1400px) {
-	#profile {
-		margin-bottom: 6rem;
-	}
 	.about-containers {
 		flex-wrap: wrap;
 	}
@@ -9,9 +6,60 @@
 	#projects {
 		height: fit-content;
 	}
+
+	.down-btn:last-child {
+		margin-top: 2rem;
+	}
+}
+
+@media screen and (min-width: 1400px) {
+	body {
+		margin-top: 5vh;
+		font-size: x-large;
+	}
+	.project-img {
+		width: 20rem;
+		height: 23rem;
+		border-radius: 1rem;
+	}
+
+	.down-btn {
+		display: none;
+	}
+
+	#projects {
+		padding-top: 0;
+		margin-top: 0;
+		height: auto;
+	}
+	.section-container {
+		gap: 4rem;
+		height: auto;
+	}
+	#experience {
+		margin-top: 10px;
+		top: -10rem;
+		padding-bottom: 0;
+		margin-bottom: 0;
+		height: 50vh;
+	}
+	#profile {
+		margin-bottom: 0;
+		padding-bottom: 0;
+		height: 75vh;
+	}
+	.color-container {
+		min-width: 30%;
+	}
+	.up-btn {
+		align-content: calc(100%+250px);
+	}
 }
 
 @media screen and (max-width: 1200px) {
+	body {
+		margin-top: 5vh;
+	}
 	#desktop-nav {
 		display: none;
 	}
@@ -21,6 +69,10 @@
 	#experience,
 	.experience-details-container {
 		margin-top: 2rem;
+	}
+
+	#profile {
+		height: 55vh;
 	}
 	#profile,
 	.section-container {
@@ -45,11 +97,172 @@
 		margin-top: 0;
 	}
 	.down-btn {
-		margin-top: 70px;
-		right: -27rem;
+		display: none;
 	}
 	.up-btn {
-		right: -27rem;
+		right: -60rem;
+	}
+	#about {
+		margin-top: 5rem;
+		padding-top: 10rem;
+	}
+
+	.about-containers {
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.project-img {
+		width: 20rem;
+		height: 20rem;
+	}
+}
+
+@media screen and (max-width: 1100px) {
+	body {
+		margin-top: 0;
+	}
+	#profile {
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+	#contact,
+	footer {
+		height: 20vh;
+	}
+	#profile {
+		height: 40vh;
+	}
+
+	.up-btn {
+		right: -45rem;
+	}
+
+	.project-img {
+		width: 15rem;
+		height: 20rem;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	body {
+		margin-top: 3vh;
+	}
+	#profile {
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+
+	#contact,
+	footer {
+		height: 50vh;
+	}
+	#profile {
+		height: 80vh;
+	}
+	#socials-container {
+		margin-top: 1rem;
+		padding-top: 1rem;
+	}
+	#about {
+		margin-top: 0;
+		padding-top: 0;
+	}
+	#projects {
+		margin-top: 0;
+	}
+	#contact {
+		margin-top: 0;
+	}
+	#profile {
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+	#contact,
+	footer {
+		height: 50vh;
+	}
+	#profile {
+		height: 80vh;
+	}
+	#socials-container {
+		margin-top: 1rem;
+		padding-top: 1rem;
+	}
+	#about {
+		margin-top: 0;
+		padding-top: 0;
+	}
+	#projects {
+		margin-top: 0;
+	}
+	#contact {
+		margin-top: 0;
+	}
+	#profile {
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+	#contact,
+	footer {
+		height: 50vh;
+	}
+	#profile {
+		height: 80vh;
+	}
+	#socials-container {
+		margin-top: 1rem;
+		padding-top: 1rem;
+	}
+	#about {
+		margin-top: 0;
+		padding-top: 0;
+	}
+	#projects {
+		margin-top: 0;
+	}
+	#contact {
+		margin-top: 0;
+	}
+	#profile {
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+	#contact,
+	footer {
+		height: 50vh;
+	}
+	#profile {
+		height: 67vh;
+	}
+	#socials-container {
+		margin-top: 1rem;
+		padding-top: 1rem;
+		position: relative;
+		left: -30px;
+	}
+	#about {
+		margin-top: 0;
+		padding-top: 0;
+	}
+	#projects {
+		margin-top: 0;
+	}
+	#contact {
+		margin-top: 0;
+	}
+	#profile {
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+	.up-btn {
+		right: -35rem;
+	}
+
+	.project-img {
+		width: 40rem;
+		height: auto;
 	}
 }
 
@@ -113,7 +326,7 @@
 	.up-btn {
 		margin-top: 0;
 		padding-top: 0;
-		right: -15rem;
+		right: -23rem;
 	}
 
 	#about {
@@ -135,8 +348,8 @@
 	}
 
 	.project-img {
-		width: 80%;
-		height: 80%;
+		width: 25rem;
+		height: auto;
 	}
 
 	#hamburger-nav {
@@ -165,8 +378,219 @@
 		gap: 2.5rem;
 		padding-bottom: 0;
 		margin-bottom: 0;
+		position: relative;
+		left: auto;
 	}
 	#profile {
-		height: 70vh;
+		height: 90vh;
+	}
+}
+
+@media screen and (max-width: 430px) {
+	#profile {
+		height: 80vh;
+	}
+	#socials-container {
+		margin-top: 1rem;
+		padding-top: 1rem;
+		position: relative;
+		left: auto;
+	}
+	#about {
+		margin-top: 0;
+		padding-top: 0;
+	}
+	#projects {
+		margin-top: 0;
+	}
+	#contact {
+		margin-top: 0;
+	}
+	#profile {
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+	#contact,
+	footer {
+		height: 50vh;
+	}
+	#profile {
+		height: 80vh;
+	}
+	#socials-container {
+		margin-top: 1rem;
+		padding-top: 1rem;
+	}
+	#about {
+		margin-top: 0;
+		padding-top: 0;
+	}
+	#projects {
+		margin-top: 0;
+	}
+	#contact {
+		margin-top: 0;
+	}
+	#profile {
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+	#contact,
+	footer {
+		height: 50vh;
+	}
+	#profile {
+		height: 80vh;
+	}
+	#socials-container {
+		margin-top: 1rem;
+		padding-top: 1rem;
+	}
+	#about {
+		margin-top: 0;
+		padding-top: 0;
+	}
+	#projects {
+		margin-top: 0;
+	}
+	#contact {
+		margin-top: 0;
+	}
+	#profile {
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+	#contact,
+	footer {
+		height: 50vh;
+	}
+	#profile {
+		height: 80vh;
+	}
+	#socials-container {
+		margin-top: 1rem;
+		padding-top: 1rem;
+	}
+	#about {
+		margin-top: 0;
+		padding-top: 0;
+	}
+	#projects {
+		margin-top: 0;
+	}
+	#contact {
+		margin-top: 0;
+	}
+	#profile {
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+	#contact,
+	footer {
+		height: 50vh;
+	}
+	#profile {
+		height: 80vh;
+	}
+
+	.up-btn {
+		display: none;
+	}
+
+	.project-img {
+		width: 20rem;
+		border-radius: 0.5rem;
+	}
+}
+
+@media screen and (max-width: 300px) {
+	#profile {
+		height: 80vh;
+	}
+	#socials-container {
+		margin-top: 1rem;
+		padding-top: 1rem;
+		position: relative;
+		left: auto;
+	}
+	#about {
+		margin-top: 0;
+		padding-top: 0;
+	}
+	#projects {
+		margin-top: 0;
+	}
+	#contact {
+		margin-top: 0;
+	}
+	#profile {
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+	#contact,
+	footer {
+		height: 50vh;
+	}
+	#profile {
+		height: 80vh;
+	}
+	#socials-container {
+		margin-top: 1rem;
+		padding-top: 1rem;
+	}
+	#about {
+		margin-top: 0;
+		padding-top: 0;
+	}
+	#projects {
+		margin-top: 0;
+	}
+	#contact {
+		margin-top: 0;
+	}
+	#profile {
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+	#contact,
+	footer {
+		height: 50vh;
+	}
+	#profile {
+		height: 80vh;
+	}
+	#socials-container {
+		margin-top: 1rem;
+		padding-top: 1rem;
+	}
+	#about {
+		margin-top: 0;
+		padding-top: 0;
+	}
+	#projects {
+		margin-top: 0;
+	}
+	#contact {
+		margin-top: 0;
+	}
+	#profile {
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+	#contact,
+	footer {
+		height: 50vh;
+	}
+	#profile {
+		height: 80vh;
+	}
+
+	.up-btn {
+		display: none;
+	}
+
+	.project-img {
+		width: 15rem;
+		border-radius: 0.5rem;
 	}
 }

@@ -7,6 +7,13 @@
 	padding: 0;
 }
 
+.active {
+	color: grey;
+	text-decoration: underline;
+	text-underline-offset: 1rem;
+	text-decoration-color: rgb(181, 181, 181);
+}
+
 body {
 	font-family: "Poppins", sans-serif;
 }
@@ -207,6 +214,10 @@ a:hover {
 	transform: rotate(-45deg) translate(10px, -5px);
 }
 
+.text-container {
+	margin-top: 0.5rem;
+}
+
 .hamburger-icon span:first-child {
 	transform: none;
 }
@@ -309,6 +320,7 @@ section {
 	gap: 2rem;
 	margin-bottom: 2rem;
 	margin-top: 2rem;
+	flex-wrap: wrap;
 }
 
 .about-details-container {
@@ -393,18 +405,20 @@ article .icon {
 
 #projects {
 	position: relative;
+	margin-top: 0.7rem;
 }
 
 .color-container {
 	border-color: rgb(163, 163, 163);
 	background: rgb(250, 250, 250);
-	min-width: 250px;
+	min-width: 15.625rem;
 }
 
 .project-img {
 	border-radius: 0.5rem;
-	height: 250px;
-	width: 280px;
+	height: 15.625rem;
+	width: 17.2rem;
+
 	position: relative;
 	object-fit: cover;
 	object-position: center;
@@ -506,6 +520,10 @@ footer p {
 	border: rgb(53, 53, 53) 0.1rem solid;
 	border-color: rgb(163, 163, 163);
 	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .hidden {
